@@ -1,32 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Umi Qoriah Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Atibbaul Quluuby — Penulis & Desainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Umi Qoriah</h1>
-            <p>Welcome to my portfolio!</p>
-        </header>
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of the project.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of the project.</p>
-            </div>
-        </section>
-        <footer>
-            <p>Contact: umi.qoriah@example.com</p>
-        </footer>
+
+  <!-- Ornamental canvas background -->
+  <canvas id="ornament-canvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:1;"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ══════════════════════════════
+       NAVIGATION
+  ══════════════════════════════ -->
+  <nav>
+    <div class="nav-brand">M. A. <em>Quluuby</em></div>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#menulis">Tulisan</a></li>
+      <li><a href="#desain">Desain</a></li>
+      <li><a href="#filosofi">Filosofi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-letter">U</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Santri · Penulis · Desainer</p>
+
+      <h1 class="hero-name">Muhammad<br>Atibbaul<br>Quluuby</h1>
+      <p class="hero-name-alt">— dikenal sebagai <em style="font-style:italic;">Ubay</em></p>
+
+      <p class="hero-tagline">
+        Menuangkan makna ke dalam kata & warna.<br>
+        Setiap karya adalah cara bicara tanpa suara.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#menulis" class="btn-gold"><span>Baca Tulisan Saya</span></a>
+        <a href="#kontak" class="btn-ghost">Mari Berkenalan</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Gulir ke bawah
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TENTANG
+  ══════════════════════════════ -->
+  <section id="tentang">
+    <div class="about-grid">
+
+      <!-- Portrait illustration -->
+      <div class="reveal-left">
+        <div class="portrait-frame">
+          <div class="portrait-corner tl"></div>
+          <div class="portrait-corner tr"></div>
+          <div class="portrait-corner bl"></div>
+          <div class="portrait-corner br"></div>
+          <div class="portrait-monogram">U</div>
+          <div class="portrait-label">Muhammad Atibbaul Quluuby</div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-right reveal-right">
+        <div class="section-header">
+          <p class="section-number">// 01 — Tentang</p>
+          <h2 class="section-title">Seorang yang<br><em>mencari makna</em></h2>
+        </div>
+
+        <blockquote class="about-quote">
+          "Setiap karya adalah cara untuk menyampaikan makna yang tak selalu bisa diucapkan."
+        </blockquote>
+
+        <p class="about-body">
+          Ubay adalah seorang santri yang tumbuh dengan kecintaan mendalam terhadap dunia menulis dan desain. Di tengah kesibukan belajar di pesantren, ia menemukan bahwa seni adalah bahasa jiwa yang universal — melampaui batas kata dan ruang.
+        </p>
+        <p class="about-body">
+          Ia gemar menuangkan ide dan perasaan ke dalam bentuk cerita — merajut narasi dari pengalaman hidup, renungan, dan imajinasi. Seiring waktu, kecintaannya berkembang ke ranah visual, mengeksplorasi estetika melalui karya desain yang sarat makna.
+        </p>
+
+        <div class="divider-line"><span>✦</span></div>
+
+        <div class="about-tags">
+          <span class="about-tag">Fiksi</span>
+          <span class="about-tag">Esai</span>
+          <span class="about-tag">Puisi</span>
+          <span class="about-tag">Desain Grafis</span>
+          <span class="about-tag">Ilustrasi</span>
+          <span class="about-tag">Tipografi</span>
+          <span class="about-tag">Fotografi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TULISAN
+  ══════════════════════════════ -->
+  <section id="menulis">
+    <div class="section-header reveal">
+      <p class="section-number">// 02 — Karya Tulis</p>
+      <h2 class="section-title">Kata yang<br><em>membentuk dunia</em></h2>
+      <p class="section-sub">Kumpulan tulisan yang lahir dari perenungan, pengalaman, dan kecintaan terhadap bahasa.</p>
+    </div>
+
+    <div class="writing-grid">
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Cerpen</p>
+        <h3 class="writing-title">Surat yang Tak Pernah Terkirim</h3>
+        <p class="writing-excerpt">
+          "Di sudut meja belajarku, selembar kertas kuning itu masih terlipat rapi — menunggu keberanian yang belum juga datang..."
+        </p>
+        <div class="writing-meta">
+          <span>2024</span>
+          <span class="writing-badge">Fiksi</span>
+        </div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Esai</p>
+        <h3 class="writing-title">Tentang Sunyi dan Berkah di Dalamnya</h3>
+        <p class="writing-excerpt">
+          "Pesantren mengajarkan satu hal yang jarang diajarkan di tempat lain: bagaimana bersahabat dengan sepimu sendiri..."
+        </p>
+        <div class="writing-meta">
+          <span>2024</span>
+          <span class="writing-badge">Refleksi</span>
+        </div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Puisi</p>
+        <h3 class="writing-title">Aksara di Ujung Malam</h3>
+        <p class="writing-excerpt">
+          "Kucatat bintang dengan penaku / bukan karena ia abadi / tapi karena aku ingin selalu ingat / ada keindahan yang tidak menuntut dipahami..."
+        </p>
+        <div class="writing-meta">
+          <span>2023</span>
+          <span class="writing-badge">Puisi</span>
+        </div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Cerpen</p>
+        <h3 class="writing-title">Perpustakaan di Ujung Gang</h3>
+        <p class="writing-excerpt">
+          "Tempat itu berbau tua — seperti kenangan yang disimpan terlalu lama. Tapi di sinilah aku pertama kali belajar bahwa cerita bisa menyelamatkan..."
+        </p>
+        <div class="writing-meta">
+          <span>2023</span>
+          <span class="writing-badge">Fiksi</span>
+        </div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Esai</p>
+        <h3 class="writing-title">Desain sebagai Ibadah</h3>
+        <p class="writing-excerpt">
+          "Keindahan bukan kemewahan. Ia adalah bahasa Tuhan yang diturunkan kepada manusia agar kita saling mengenal..."
+        </p>
+        <div class="writing-meta">
+          <span>2024</span>
+          <span class="writing-badge">Opini</span>
+        </div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-genre">Flash Fiction</p>
+        <h3 class="writing-title">Dua Menit Sebelum Fajar</h3>
+        <p class="writing-excerpt">
+          "Di antara doa terakhir dan azan pertama, ada sebuah diam yang lebih dalam dari tidur dan lebih jaga dari terjaga..."
+        </p>
+        <div class="writing-meta">
+          <span>2024</span>
+          <span class="writing-badge">Fiksi</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       DESAIN
+  ══════════════════════════════ -->
+  <section id="desain">
+    <div class="section-header reveal">
+      <p class="section-number">// 03 — Karya Visual</p>
+      <h2 class="section-title">Estetika yang<br><em>berbicara</em></h2>
+      <p class="section-sub">Eksplorasi visual — dari tipografi, ilustrasi, hingga identitas visual yang sarat makna.</p>
+    </div>
+
+    <div class="design-grid">
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v1"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="50" stroke="white" stroke-width="1"/>
+              <circle cx="60" cy="60" r="35" stroke="white" stroke-width="1"/>
+              <circle cx="60" cy="60" r="20" stroke="white" stroke-width="1"/>
+              <line x1="10" y1="60" x2="110" y2="60" stroke="white" stroke-width="0.8"/>
+              <line x1="60" y1="10" x2="60" y2="110" stroke="white" stroke-width="0.8"/>
+              <line x1="24.6" y1="24.6" x2="95.4" y2="95.4" stroke="white" stroke-width="0.8"/>
+              <line x1="95.4" y1="24.6" x2="24.6" y2="95.4" stroke="white" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Identitas Visual — Pesantren</div>
+            <div class="design-item-sub">Branding · Logo · Tipografi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v2"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="10" width="60" height="60" stroke="white" stroke-width="1"/>
+              <rect x="20" y="20" width="40" height="40" stroke="white" stroke-width="0.7"/>
+              <rect x="30" y="30" width="20" height="20" stroke="white" stroke-width="0.7"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Poster Sastra</div>
+            <div class="design-item-sub">Desain Poster · Editorial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v3"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+              <polygon points="45,5 85,70 5,70" stroke="white" stroke-width="1" fill="none"/>
+              <polygon points="45,20 72,65 18,65" stroke="white" stroke-width="0.7" fill="none"/>
+              <polygon points="45,35 59,60 31,60" stroke="white" stroke-width="0.5" fill="none"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Eksplorasi Geometri</div>
+            <div class="design-item-sub">Ilustrasi · Pattern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v4"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="75" height="75" viewBox="0 0 75 75" fill="none">
+              <path d="M37.5 5 L70 65 H5 Z" stroke="white" stroke-width="1" fill="none"/>
+              <circle cx="37.5" cy="37.5" r="22" stroke="white" stroke-width="0.7" fill="none"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Cover Buku Antologi</div>
+            <div class="design-item-sub">Desain Buku · Editorial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v5"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="30" stroke="white" stroke-width="1" fill="none"/>
+              <circle cx="40" cy="40" r="15" stroke="white" stroke-width="0.7" fill="none"/>
+              <line x1="10" y1="40" x2="70" y2="40" stroke="white" stroke-width="0.6"/>
+              <line x1="40" y1="10" x2="40" y2="70" stroke="white" stroke-width="0.6"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Kalender Sastra</div>
+            <div class="design-item-sub">Tipografi · Layout</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-item reveal">
+        <div class="design-thumb">
+          <div class="design-bg v6"></div>
+          <div class="design-pattern"></div>
+          <div class="design-svg">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="10" width="28" height="28" stroke="white" stroke-width="0.9" fill="none"/>
+              <rect x="42" y="10" width="28" height="28" stroke="white" stroke-width="0.9" fill="none"/>
+              <rect x="10" y="42" width="28" height="28" stroke="white" stroke-width="0.9" fill="none"/>
+              <rect x="42" y="42" width="28" height="28" stroke="white" stroke-width="0.9" fill="none"/>
+            </svg>
+          </div>
+          <div class="design-overlay">
+            <div class="design-item-title">Koleksi Stiker Pesantren</div>
+            <div class="design-item-sub">Ilustrasi · Digital Art</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FILOSOFI
+  ══════════════════════════════ -->
+  <section id="filosofi">
+    <div class="philosophy-layout">
+
+      <div class="reveal-left">
+        <div class="section-header" style="margin-bottom:2rem;">
+          <p class="section-number">// 04 — Filosofi</p>
+          <h2 class="section-title">Prinsip yang<br><em>memandu</em></h2>
+        </div>
+
+        <blockquote class="big-quote">
+          "Seni adalah doa dalam rupa yang berbeda —
+          <strong>keduanya lahir dari hati</strong>
+          yang ingin menyampaikan sesuatu kepada yang lebih besar."
+        </blockquote>
+        <p class="big-quote-attr">— Ubay, dalam esainya "Desain sebagai Ibadah"</p>
+      </div>
+
+      <div class="values-list reveal-right">
+
+        <div class="value-item">
+          <div class="value-num">I</div>
+          <div>
+            <div class="value-label">Kejujuran dalam Berkarya</div>
+            <p class="value-desc">Setiap cerita dan desain lahir dari pengalaman nyata — tidak dibuat-buat, tidak berpura-pura menjadi apa yang bukan dirinya.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">II</div>
+          <div>
+            <div class="value-label">Estetika yang Bermakna</div>
+            <p class="value-desc">Keindahan bukan sekadar ornamen. Baginya, setiap pilihan visual harus menjawab pertanyaan: "Apa yang ingin disampaikan oleh keindahan ini?"</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">III</div>
+          <div>
+            <div class="value-label">Belajar Tanpa Henti</div>
+            <p class="value-desc">Sebagai santri, belajar adalah napas kehidupan. Ia membawa semangat itu ke dalam dunia seni — selalu haus akan pengetahuan baru.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">IV</div>
+          <div>
+            <div class="value-label">Karya untuk Berbagi</div>
+            <p class="value-desc">Sebuah cerita yang hanya disimpan di laci tidak akan pernah menjawab pertanyaan seseorang yang sedang sendirian. Karya harus hidup di tangan pembacanya.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       KONTAK
+  ══════════════════════════════ -->
+  <section id="kontak">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <p class="section-number">// 05 — Kontak</p>
+        <h2 class="section-title">Mari <em>berdialog</em></h2>
+        <div class="divider-line"><span>✦</span></div>
+      </div>
+
+      <p class="contact-paragraph reveal">
+        Jika kamu ingin berdiskusi tentang tulisan, kolaborasi desain, atau sekadar berbagi cerita tentang buku yang sedang dibaca — pintuku selalu terbuka.
+      </p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:ubay@email.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          ubay@email.com
+        </a>
+        <a href="https://instagram.com/" class="contact-link" target="_blank">
+          <div class="contact-link-icon">◎</div>
+          @atibbaul.quluuby
+        </a>
+        <a href="https://wa.me/62" class="contact-link" target="_blank">
+          <div class="contact-link-icon">☏</div>
+          WhatsApp: +62 ···
+        </a>
+        <a href="#" class="contact-link">
+          <div class="contact-link-icon">✍</div>
+          Blog & Tulisan: ubay.id
+        </a>
+      </div>
+
+      <div class="reveal">
+        <a href="#menulis" class="btn-gold"><span>Baca Karya Saya</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-brand">M. A. <em>Quluuby</em></div>
+    <div class="footer-copy">© 2025 · Portofolio Pribadi · Dibuat dengan sepenuh hati</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
